@@ -53,8 +53,8 @@ namespace Lab_11
             graphics.DrawRectangle(pen, cube);
             double r = (Radius);
             Point p1 = new Point(X - (int)(r * Math.Cos(Math.PI / 24)), Y - (int)(r * Math.PI / 3) + Radius);
-            Point p2 = new Point(X + (int)(r * Math.Cos(Math.PI / 24) + 1), Y - (int)(r * Math.PI / 3) + Radius * 2);
-            Point p3 = new Point(X + (int)(r * Math.Cos(Math.PI / 24) + 1), Y + (int)(r * Math.PI / 3) - Radius * 2);
+            Point p2 = new Point(X + (int)(r * Math.Cos(Math.PI / 24) +1), Y - (int)(r * Math.PI / 3) + Radius * 2);
+            Point p3 = new Point(X + (int)(r * Math.Cos(Math.PI / 24) +1), Y + (int)(r * Math.PI / 3) - Radius * 2);
             Point[] triangle = { p1, p2, p3 };
             graphics.DrawPolygon(pen, triangle);
         }
